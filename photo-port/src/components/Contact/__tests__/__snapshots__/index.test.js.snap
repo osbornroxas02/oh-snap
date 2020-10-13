@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactForm component matches snapshot 1`] = `
+<DocumentFragment>
+  <contact-form />
+</DocumentFragment>
+`;
+
+exports[`ContactForm component matches text content 1`] = `
+<DocumentFragment>
+  <contact-form />
+</DocumentFragment>
+`;
+
+exports[`ContactForm component renders 1`] = `
+<DocumentFragment>
+  <contact-form />
+</DocumentFragment>
+`;
