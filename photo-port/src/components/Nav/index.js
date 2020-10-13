@@ -1,31 +1,32 @@
 import React, { useEffect } from 'react';
-import React from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
-    useEffect(() => {
-        document.title = capitalizeFirstLetter(currentCategory.name);
-    }, [currentCategory]);
-
     const {
         categories = [],
         setCurrentCategory,
         currentCategory,
     } = props;
 
+    // useEffect(() => {
+    //     document.title = capitalizeFirstLetter(currentCategory.name);
+    // }, [currentCategory]);
+
     return (
-        <header className="flex-row px-1">
+        < header className="flex-row px-1" >
             <h2>
                 <a data-testid="link" href="/">
-                    <span role="img" aria-label="camera"> 📸</span> Oh Snap!
-        </a>
+                    <span role="img"
+                        aria-label="camera"> 📸
+                        </span> Oh Snap!
+                </a>
             </h2>
             <nav>
                 <ul className="flex-row">
                     <li className="mx-2">
                         <a data-testid="about" href="#about">
                             About me
-            </a>
+                        </a>
                     </li>
                     <li className="mx-2">
                         <span>Contact</span>
@@ -48,7 +49,7 @@ function Nav(props) {
                     ))}
                 </ul>
             </nav>
-        </header>
+        </header >
     );
 }
 
