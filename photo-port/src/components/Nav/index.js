@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
@@ -7,6 +8,7 @@ function Nav(props) {
         setCurrentCategory,
         currentCategory,
     } = props;
+
 
     // useEffect(() => {
     //     document.title = capitalizeFirstLetter(currentCategory.name);
@@ -17,8 +19,7 @@ function Nav(props) {
             <h2>
                 <a data-testid="link" href="/">
                     <span role="img"
-                        aria-label="camera"> 📸
-                        </span> Oh Snap!
+                        aria-label="camera"> 📸</span> Oh Snap!
                 </a>
             </h2>
             <nav>
